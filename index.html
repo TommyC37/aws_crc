@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header">
+            <a href="#intro" class="logo">
+                Tom <span>Cobb</span>
+            </a>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#intro">Intro</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certs">Certifications</a>
+                <a href="#edu">Education</a>
+                <a href="#exp">Experience</a>
+                <a href="#" class="contact-trigger contact-btn" id="mobile-contact">Hire</a>
+            </nav>
+
+            <button class="gradient-btn contact-btn contact-trigger"><i class="bx bx-chat" id="contact-chat"></i> Hire</button>
+        </header>
+
+        <section class="intro" id="intro">
+            <div class="intro-content">
+                <h1 id="intro-header">Hi, I'm <span>Tom</span></h1>
+                <h3>
+                    I'm a <span>Cloud Engineer</span>
+                </h3>
+                <div class="text-box">
+                    <p>I started my career in sales and marketing. Eventually, I found myself in Revenue Operations.
+                        I discovered I had a talent for <span><strong>optimizing</strong></span> systems, <span><strong>automating</strong></span> 
+                        workflows, and developing processes for <br><span><strong>growth, scalability, and efficiency</strong></span>.</p>
+                    <p>Now, my goal is to bring that experience to <span><strong>cloud engineering</strong></span>, with an emphasis on <span><strong>cybersecurity</strong></span>.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/tommyC37/">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thomasmcobb/">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="#projects" class="btn">Learn More</a>
+                    <a href="#contact" class="btn contact-trigger">Hire</a>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="static/images/headshot-gray.jpg" alt="Headshot of Tom Cobb">
+            </div>
+        </section>
+        <hr>
+        <section class="projects" id="projects">
+            <div class="projects-content">
+                <h1>Projects</h1>
+                <br>
+                <div class="projects-container">
+                    <div class="project-info text-box" id="chitter">
+                        <h3 class="chitter-icon"><i class="bx bx-chat" id="chitter-chat"></i> <span>Chitter</span></h3>
+                        <p>Chitter is a Python-based, fully encrypted private chat room application,</p>
+                        <h4>Python Libraries Used</h4>
+                        <ul>
+                            <li>Django</li>
+                            <li>Websockets</li>
+                        </ul>
+                    </div>
+                    <div class="project-info text-box" id="xstream">
+                        <h3 class="xstream-icon"><i class="bx bx-palette" id="xstream-icon"></i> <span>xStream</span></h3>
+                        <p>xStream is a Python-based set of tools for streamers and video content creators. Tools include:</p>
+                        <ul>
+                            <li>YouTube audio/video extractor</li>
+                            <li>Instagram audio/video extractor</li>
+                            <li>Audio clipper</li>
+                            <li>Soundboard</li>
+                            <li>TTS generator</li>
+                        </ul>
+                        <h4>Python Libraries Used</h4>
+                        <ul>
+                            <li>Django</li>
+                            <li>ytdlp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="skills" id="skills">
+            <div class="skills-content">
+                <h1>Skills</h1>
+                <h4>Cloud</h4>
+                <div class="skill-subsection text-box">
+                    <div class="skill-row">
+                        <div class="skill">
+                            <img src="static/images/s3.png" alt="AWS S3 icon">
+                            <p>AWS S3</p>
+                        </div>
+                        <div class="skill">
+                            <img src="static/images/EC2.png" alt="AWS EC2 icon">
+                            <p>AWS EC2</p>
+                        </div>
+                        <div class="skill">
+                            <img src="static/images/ElasticBeanstalk.png" alt="AWS Elastic Beanstalk icon">
+                            <p>AWS Elastic Beanstalk</p>
+                        </div>
+                        <div class="skill">
+                            <img src="static/images/Lambda.png" alt="AWS Lambda icon">
+                            <p>AWS Lambda</p>
+                        </div>
+                        <div class="skill">
+                            <img src="static/images/CloudFront.png" alt="AWS CloudFront icon">
+                            <p>AWS CloudFront</p>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/linode.png" id="linode" alt="Linode icon">
+                            </div>
+                            <p>Linode</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/nginx.png" id="nginx" alt="Nginx icon">
+                            </div>
+                            <p>Nginx</p>
+                        </div>
+                        <div class="skill">
+                            <img src="static/images/pythonanywhere.png" alt="PythonAnywhere x icon">
+                            <p>PythonAnywhere</p>
+                        </div>
+                    </div>
+                </div>
+                <h4>Programming & Scripting Languages</h4>
+                <div class="skill-subsection text-box">
+                    <div class="skill-row">
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/html.png" id="html" alt="HTML icon">
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/css.png" id="css" alt="CSS icon">
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/js.png" alt="Javascript icon">
+                            </div>
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/python.png" alt="Python icon">
+                            </div>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/c-sharp.png" alt="C# icon">
+                            </div>
+                            <p>C#</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/google-apps-script.png" id="gapps" alt="Google Apps Script icon">
+                            </div>
+                            <p>Google Apps Script</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/bash.png" alt="Bash icon">
+                            </div>
+                            <p>Bash</p>
+                        </div>
+                        <div class="skill">
+                            <div class="white-img-bg">
+                                <img src="static/images/git.png" alt="Git icon">
+                            </div>
+                            <p>Git</p>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                </div>
+                </div>
+                <div class="other-tech skill-subsection text-box">
+                    <div class="tech">
+                        <h4>Operating Systems</h4>
+                        <ul>
+                            <li>Windows</li>
+                            <li>Ubuntu</li>
+                            <li>Kali Linux</li>
+                            <li>Mac</li>
+                        </ul>
+                    </div>
+                    <div class="tech" id="center-box">
+                        <h4>Data Technologies</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Databricks</li>
+                            <li>Salesforce</li>
+                            <li>ZoomInfo/RingLead</li>
+                        </ul>
+                    </div>
+                    <div class="tech">
+                        <h4>Collaboration</h4>
+                        <ul>
+                            <li>Slack</li>
+                            <li>Confluence</li>
+                            <li>Jira, Asana, and Monday.com</li>
+                            <li>Google Suite</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="certs" id="certs">
+            <div class="resy-subtitle">
+                <h1>Certifications</h1>
+                <h5>(Anticipated)</h5>
+            </div>
+            <div class="cert-block text-box">
+                <h3>AWS Cloud Practitioner</h3>
+                <h3>CompTIA Security+</h3>
+            </div>
+        </section>
+        <hr>
+        <section class="edu" id="edu">
+            <div>
+                <h1>Education</h1>
+                <div class="resy-item text-box">
+                    <div class="resy-header">
+                        <div class="resy-title">
+                            <h3>Fordham University</h3>
+                        </div>
+                        <div class="resy-date">
+                            <h4>2015-2018</h4>
+                        </div>
+                    </div>
+                    <div class="resy-subtitle">
+                        <h4>Gabelli School of Business</h4>
+                        <h5>(Bronx, NY)</h5>
+                        <!-- <div class="place">
+                            <h5>(Bronx, NY)</h5>
+                        </div> -->
+                    </div>
+                    <div class="resy-content">
+                        <ul>
+                            <li>Bachelor of Science in Business Administration with a conventration in Marketing</li>
+                            <li>Graduated <span><strong>summa cum laude</strong></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="resy-item text-box">
+                    <div class="resy-header">
+                        <div class="resy-title">
+                            <h3>Westchester Community College</h3>
+                        </div>
+                        <div class="resy-date">
+                            <h4>2012-2015</h4>
+                        </div>
+                    </div>
+                    <div class="resy-subtitle">
+                        <h4>School of Arts, Humanities and Social Sciences</h4>
+                        <h5>(Valhalla, NY)</h5>
+                    </div>
+                    <div class="resy-content">
+                        <ul>
+                            <li>Associate of Art in Liberal Arts: Social Science</li>
+                            <li><span><strong>Valedictorian</strong></span></li>
+                            <li>SUNY Chancellor's Award Winner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="exp" id="exp">
+            <h1>Experience</h1>
+            <div class="resy-item text-box">
+                <div class="resy-header">
+                    <div class="resy-title">
+                        <h3>Revenue Operations Analyst</h3>
+                    </div>
+                    <div class="resy-date">
+                        <h4>2022-Present</h4>
+                    </div>
+                </div>
+                <div class="resy-subtitle">
+                    <h4>Stensul</h4>
+                    <h5>(Remote)</h5>
+                </div>
+                <div class="resy-content">
+                    <ul>
+                        <li>Serve as the primary administrator for our Salesforce CRM, consisting of over 500,000 records.</li>
+                        <li>Monitor and investigate 1.6k daily sales rep activities (emails, calls, etc.) through error logs and dashboards.</li>
+                        <li>Implemented the rollout of a new Multi Factor Authentication process to 60+ internal stakeholders.</li>
+                        <li>First line of technical support for 70+ users across 6 teams.</li>
+                        <li>Accelerated sales ready resolution time by 50+ hours by developing a custom object with automated processes.</li>
+                        <li>Implemented an automated meeting booking process that saved an estimated 24+ hours of work per month.</li>
+                        <li>Manage the integration and data management of a dozen different software applications.</li>
+                        <li>Train and certify new hires on internal revenue operations ecosystem and processes.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="resy-item text-box">
+                <div class="resy-header">
+                    <div class="resy-title">
+                        <h3>Campaign Operations Specialist</h3>
+                    </div>
+                    <div class="resy-date">
+                        <h4>2021-2022</h4>
+                    </div>
+                </div>
+                <div class="resy-subtitle">
+                    <h4>Stensul</h4>
+                    <h5>(Remote)</h5>
+                </div>
+                <div class="resy-content">
+                    <ul>
+                        <li>Built, implemented, and tracked results for 4+ monthly email campaigns using Stensul, Marketo and Salesforce.</li>
+                        <li>Implemented ticketing process for campaign requests resulting in 30 mins saved per campaign build time.</li>
+                        <li>Developed Salesforce reports and dashboards for weekly team wide analysis of campaign performance.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="resy-item text-box">
+                <div class="resy-header">
+                    <div class="resy-title">
+                        <h3>Enterprise Sales Development Representative</h3>
+                    </div>
+                    <div class="resy-date">
+                        <h4>2020-2021</h4>
+                    </div>
+                </div>
+                <div class="resy-subtitle">
+                    <h4>Stensul</h4>
+                    <h5>(New York, NY)</h5>
+                </div>
+                <div class="resy-content">
+                    <ul>
+                        <li>Generated $1.1 million in sales qualified opportunities ($745,000 in closed-won opportunities).</li>
+                        <li>Created inbound lead playbook that covers chatbot strategies, lead qualification, lead routing, etc.</li>
+                        <li>Increased team-wide email reply rate from 8% to 11% by managing A/B tests for shared cadences.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="resy-item text-box">
+                <div class="resy-header">
+                    <div class="resy-title">
+                        <h3>Senior Business Development Representative</h3>
+                    </div>
+                    <div class="resy-date">
+                        <h4>2018-2020</h4>
+                    </div>
+                </div>
+                <div class="resy-subtitle">
+                    <h4>Simon Data</h4>
+                    <h5>(New York, NY)</h5>
+                </div>
+                <div class="resy-content">
+                    <ul>
+                        <li>Co-led initiative to rewrite sales copy for emails used by the entire Business Development team.</li>
+                        <li>Increased team's email open rate from 8% to 12% by conducting Python analysis of subject lines.</li>
+                        <li>Developed a modular training program for new Business Development Representatives.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="resy-item text-box">
+                <div class="resy-header">
+                    <div class="resy-title">
+                        <h3>Operations, Reservations, and Building Manager</h3>
+                    </div>
+                    <div class="resy-date">
+                        <h4>2015-2018</h4>
+                    </div>
+                </div>
+                <div class="resy-subtitle">
+                    <h4>Fordham University</h4>
+                    <h5>(Bronx, NY)</h5>
+                </div>
+                <div class="resy-content">
+                    <ul>
+                        <li>Supervised and trained a team of 15 building managers and assistants to maintain event spaces.</li>
+                        <li>Streamlined inventory management by implementing a digital QR code system.</li>
+                        <li>Filed comprehensive reports detailing building conditions, incidents, and maintenance requests for every shift.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </section>
+        <hr>
+        <section class="form-section">
+            <div class="contact-form">
+                <i class='bx bx-x close-contact' ></i>
+                <h2>Contact <span><strong>Me</strong></span></h1>
+            
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email" name="" id="">
+                        </div>
+                        <div class="input-box">
+                            <input type="number" placeholder="Phone Number">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="input-group-2">
+                        <textarea name="" id="" placeholder="Your message..." cols="30" rows="10"></textarea>
+                        <input type="submit" value="Send Message" class="btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://github.com/tommyC37/">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/thomasmcobb/">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#" class="contact-trigger">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <p class="copyright">
+                Copyright © 2024 Tom Cobb
+            </p>
+        </footer>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
