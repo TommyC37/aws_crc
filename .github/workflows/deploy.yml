@@ -23,4 +23,4 @@ jobs:
       # Step 3: Sync files to S3
       - name: Sync Files to S3
         run: |
-          aws s3 cp ./your-directory s3://www.tomcobb.net/ --recursive --acl bucket-owner-full-control
+          aws s3 cp . s3://www.tomcobb.net/ --recursive --acl bucket-owner-full-control
