@@ -25,4 +25,4 @@ jobs:
       # Step 3: Sync files to S3
       - name: Sync Files to S3
         run: |
-          aws s3 sync . s3://tomcobb.net --delete
+          aws s3 sync . s3://www.tomcobb.net --delete
